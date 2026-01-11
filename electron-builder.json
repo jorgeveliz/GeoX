@@ -1,0 +1,29 @@
+{
+    "appId": "com.jvcminedata.geox",
+    "productName": "GeoX",
+    "directories": {
+        "output": "release"
+    },
+    "files": [
+        "dist/**/*",
+        "electron/**/*",
+        "package.json"
+    ],
+    "win": {
+        "target": [
+            "nsis",
+            "portable"
+        ],
+        "icon": "public/icon.ico"
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true,
+        "createDesktopShortcut": true,
+        "createStartMenuShortcut": true,
+        "shortcutName": "GeoX"
+    },
+    "portable": {
+        "artifactName": "GeoX-Portable.exe"
+    }
+}
